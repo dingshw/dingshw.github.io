@@ -11,17 +11,17 @@
   <link rel="stylesheet" href="assets/animate.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="assets/jquery.lettering.js"></script>
-  <script src="jquery.textillate.js"></script>
+  <script src="jquery.textillate.js"></script> -->
   <script type="text/javascript">
-    $(function() {
-      $('.text1').textillate({ in: { effect: 'flipInX' } });
-      $('.text3').textillate({
-        initialDelay: 9000,
-        in: { effect: 'bounceInDown' }
-      });
-    })
+    // $(function() {
+    //   $('.text1').textillate({ in: { effect: 'flipInX' } });
+    //   $('.text3').textillate({
+    //     initialDelay: 9000,
+    //     in: { effect: 'bounceInDown' }
+    //   });
+    // })
   </script>
   <script>
     (function() {
@@ -38,12 +38,15 @@
   </script>
   <!--添加百度统计代码-->
   <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?7acf9e085133d45d328a87516d907653";
-        var s = document.getElementsByTagName("script")[0]; 
-  </script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7acf9e085133d45d328a87516d907653";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
 </head>
 
 <body>
